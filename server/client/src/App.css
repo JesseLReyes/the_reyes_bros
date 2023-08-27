@@ -1,0 +1,213 @@
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--bg-secondary);
+  transition: width 600ms ease;
+  overflow: hidden;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  margin-left: 2rem;
+  height: 5rem;
+  font-size: 30px;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 2rem;
+}
+
+.nav-link image {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.navbar:hover {
+  width: 16rem;
+}
+
+.navbar:hover .link-text {
+  display: block;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+}
+.the-reyes-bros-logo {
+  /* position: absolute; */
+  /* top: 120px;
+  left: 40%; */
+  padding: 40px;
+  /* background-color: -webkit-linear-gradient(45deg, #00f39c, #00a3fc); */
+  border-radius: 20px;
+  border: 4px solid black;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 2rem;
+}
+
+.the-reyes-bros-logo-text {
+  background: -webkit-linear-gradient(45deg, #00f39c, #00a3fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.designers {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10rem;
+  font-size: 6rem;
+}
+
+.designers {
+  padding: 120px;
+}
+
+#zak-profile {
+  background-image: url('../src/pics/zak_profile.jpg');
+}
+
+#ben-profile {
+  background-image: url('../src/pics/ben_profile.jpg');
+}
+
+#jesse-profile {
+  background-image: url('../src/pics/jesse_profile.jpg');
+}
+
+.designers-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.profile {
+  position: relative;
+  width: 350px;
+  margin: 120px 30px;
+}
+
+.profile-pic {
+  background-size: cover;
+  background-position: 30% top;
+  height: 700px;
+  width: 350px;
+}
+
+.profile-name {
+  font-family: 'Roboto', sans-serif;
+  /* text-transform: uppercase; */
+  margin: 20px;
+  display: inline-block;
+}
+
+.profile-about {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.about {
+  background-color: white;
+  font-size: 24px;
+  word-wrap: wrap;
+  width: 300px;
+  height: 200px;
+}
+
+.about-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-context {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.project-card {
+  border: 4px solid black;
+  border-radius: 40px;
+  box-shadow: 20px 20px 10px rgb(132, 129, 129);
+  background-color: #111b21;
+}
+
+.game-title {
+  color: white;
+  margin-left: 60px;
+}
+.game-description {
+  color: white;
+  font-size: 80px;
+  margin: 20px;
+}

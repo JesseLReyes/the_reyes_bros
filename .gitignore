@@ -1,5 +1,6 @@
 /server/config/dev.js
 /server/node_modules
+server/client/node_modules/
 
 .DS_Store
 .env.local
